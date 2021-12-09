@@ -1,0 +1,36 @@
+.client-section__list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.client-section__item:focus,
+.client-section__item:hover {
+  fill: $accent-color;
+  border-color: $accent-color;
+}
+
+.client-section__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
+  border: 1px solid $primary-gray-color;
+  border-radius: 4px;
+
+  fill: $primary-gray-color;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.client-section__icon {
+  height: 60px;
+  width: 106px;
+}

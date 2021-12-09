@@ -1,0 +1,35 @@
+.picture-section__list {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.picture-section__list .item + .item {
+  margin-left: 30px;
+}
+
+.picture-section__item {
+  position: relative;
+}
+
+.picture-section__box {
+  position: absolute;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+  bottom: 0;
+  right: 0;
+  height: 70px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.picture-section__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
