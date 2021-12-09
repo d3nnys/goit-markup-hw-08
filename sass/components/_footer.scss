@@ -1,6 +1,7 @@
 .footer-section__box {
   display: flex;
   align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer-logo__web {
@@ -54,7 +55,6 @@
 .footer-social__box {
   display: flex;
   flex-direction: column;
-  margin-top: 12px;
   margin-left: 70px;
   height: 80px;
   width: 206px;
