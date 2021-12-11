@@ -2,13 +2,17 @@
   .features-section__item:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  .features-section__item:last-child {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .features-section__item {
     width: calc((100% - 2 * 10px) / 2);
 
-    margin: 5px;
+    // margin: 10px;
   }
 }
 
@@ -45,7 +49,7 @@
   .features-section__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -5px;
+    margin: -10px;
   }
 }
 
@@ -63,13 +67,9 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.features-title {
-  text-align: left;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    text-align: left;
   }
 }
 

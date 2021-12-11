@@ -1,6 +1,12 @@
+@media screen and (max-width: 1199px) {
+  .picture-section {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .picture-section__list {
-    // display: flex;
+    display: flex;
     text-align: center;
     align-items: center;
   }
