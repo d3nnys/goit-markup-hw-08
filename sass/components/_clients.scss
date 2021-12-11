@@ -1,7 +1,25 @@
 .client-section__list {
-  // display: flex;
+  display: flex;
   text-align: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    height: 335px;
+  }
+}
+
+.client-section__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.client-section__item {
+  @media screen and (max-width: 767px) {
+    width: 210px;
+    height: 92px;
+  }
 }
 
 .client-section__item:focus,
@@ -28,9 +46,15 @@
     fill: $accent-color;
     border-color: $accent-color;
   }
+
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    width: 210px;
+    height: 92px;
+  }
 }
 
 .client-section__icon {
-  height: 60px;
   width: 106px;
+  height: 60px;
 }

@@ -61,6 +61,11 @@ h2 {
   margin-bottom: 50px;
 
   color: $title-text-color;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 h3 {
@@ -89,6 +94,11 @@ footer {
 }
 
 .section {
-  padding-bottom: 94px;
   padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

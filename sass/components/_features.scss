@@ -2,10 +2,6 @@
   .features-section__item:not(:last-child) {
     margin-bottom: 30px;
   }
-
-  .features-section__item:last-child {
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -71,10 +67,6 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
-}
-
-.feature-section {
-  padding-bottom: 0;
 }
 
 .features-section__title {
