@@ -456,6 +456,13 @@ footer {
   }
 }
 
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
 .client-section__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -984,6 +991,51 @@ footer {
   display: none;
 }
 
+.header-bord__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 80px;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .header-icon__close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
 .hero-section__button {
   display: inline-block;
   border: 1px solid transparent;
@@ -1483,7 +1535,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 767px) {
   .team-section__item {
-    width: 450px;
+    width: 100%;
     padding: 0;
   }
 }

@@ -39,6 +39,28 @@
               <a href="./contacts.html" class="site-nav__link link">Контакты</a>
             </li>
           </ul>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="header-icon__close"
+                href="./image/sprite.svg#icon-close"
+              ></use>
+              <use
+                class="header-icon__menu"
+                href="./image/sprite.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-box"></div>
         </nav>
         <ul class="site-info">
           <li class="site-info__item">
@@ -66,8 +88,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-section__title">
-            Эффективные решения<br />
-            для вашего бизнеса
+            Эффективные решения для вашего бизнеса
           </h1>
           <button type="button" class="hero-section__button" data-modal-open>
             Заказать услугу
@@ -526,5 +547,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
