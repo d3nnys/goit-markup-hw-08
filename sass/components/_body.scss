@@ -58,12 +58,12 @@ h2 {
   line-height: 1.16;
   text-align: center;
 
+  margin-top: 0;
   margin-bottom: 50px;
 
   color: $title-text-color;
 
   @media screen and (max-width: 1199px) {
-    margin-top: 0;
     margin-bottom: 30px;
   }
 }
@@ -97,7 +97,7 @@ footer {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }

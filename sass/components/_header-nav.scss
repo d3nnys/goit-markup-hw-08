@@ -88,13 +88,13 @@
   display: none;
 }
 
-// .menu-toggle.is-open .icon-close {
-//   display: block;
-// }
+.menu-toggle.is-open .icon-close {
+  display: block;
+}
 
-// .menu-toggle.is-open .icon-menu {
-//   display: none;
-// }
+.menu-toggle.is-open .icon-menu {
+  display: none;
+}
 
 .header-icon {
   color: $title-text-color;
