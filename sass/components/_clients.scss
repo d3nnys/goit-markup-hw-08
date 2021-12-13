@@ -4,16 +4,19 @@
     text-align: center;
     justify-content: space-between;
   }
+
+  .client-section__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client-section__list {
     display: flex;
     text-align: center;
-  }
-
-  .client-section__link {
-    display: block;
   }
 
   .client-section__list {
@@ -35,6 +38,11 @@
 
   .client-section__link {
     display: inline-flex;
+    width: 226px;
+  }
+
+  .client-section__item {
+    width: 226px;
   }
 }
 
@@ -64,11 +72,11 @@
 }
 
 .client-section__link {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 92px;
-  width: 170px;
+
   border: 1px solid $primary-gray-color;
   border-radius: 4px;
 
