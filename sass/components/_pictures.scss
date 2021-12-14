@@ -5,6 +5,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .picture-section {
+    padding-top: 0;
+  }
+
   .picture-section__list {
     display: flex;
     text-align: center;
