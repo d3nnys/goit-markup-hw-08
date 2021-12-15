@@ -19,7 +19,7 @@
     <!-- cap -->
     <header class="header-bord">
       <div class="header-bord__box container">
-        <a href="““">
+        <a href="““" class="header-bord__link">
           <span class="header-logo__web">Web</span>
           <span class="header-logo__studio">Studio</span>
         </a>
@@ -37,8 +37,31 @@
               <a href="./contacts.html" class="site-nav__link link">Контакты</a>
             </li>
           </ul>
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              class="header-icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="header-icon__close"
+                href="./image/sprite.svg#icon-close"
+              ></use>
+              <use
+                class="header-icon__menu"
+                href="./image/sprite.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="site-info">
+        <ul class="site-info__list">
           <li class="site-info__item">
             <a href="mailto:info@devstudio.com" class="site-info__link link">
               <svg class="site-info__icon">
@@ -107,10 +130,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-1-min.jpg"
+                    srcset="./image/portfolio-1-img-450.jpg"
+                    src="./image/portfolio-1-img-900.jpg"
                     alt="ноутбук с веб-сайтом"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Технокряк это современная площадка распространения
@@ -132,10 +154,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-2-min.jpg"
+                    srcset="./image/portfolio-2-img-450.jpg"
+                    src="./image/portfolio-2-img-900.jpg"
                     alt="постер баскетболистов"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -158,10 +179,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-3-min.jpg"
+                    srcset="./image/portfolio-3-img-450.jpg"
+                    src="./image/portfolio-3-img-900.jpg"
                     alt="название ресторана"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -184,10 +204,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-4-min.jpg"
+                    srcset="./image/portfolio-4-img-450.jpg"
+                    src="./image/portfolio-4-img-900.jpg"
                     alt="наушники"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -210,10 +229,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-5-min.jpg"
+                    srcset="./image/portfolio-5-img-450.jpg"
+                    src="./image/portfolio-5-img-900.jpg"
                     alt="коробки"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -236,10 +254,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-6-min.jpg"
+                    srcset="./image/portfolio-6-img-450.jpg"
+                    src="./image/portfolio-6-img-900.jpg"
                     alt="веб-сайт"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -262,10 +279,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-7-min.jpg"
+                    srcset="./image/portfolio-7-img-450.jpg"
+                    src="./image/portfolio-7-img-900.jpg"
                     alt="книга"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -288,10 +304,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-8-min.jpg"
+                    srcset="./image/portfolio-8-img-450.jpg"
+                    src="./image/portfolio-8-img-900.jpg"
                     alt="бирка"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -314,10 +329,9 @@
               <a href="" class="portfolio-work__link">
                 <div class="portfolio-box__card">
                   <img
-                    src="image/our-work-9-min.jpg"
+                    srcset="./image/portfolio-9-img-450.jpg"
+                    src="./image/portfolio-9-img-900.jpg"
                     alt="работа за ноутбуком"
-                    width="370"
-                    height="294"
                   />
                   <p class="portfolio-card__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -344,7 +358,7 @@
     <!-- footer -->
     <footer class="footer-section">
       <div class="footer-section__box container">
-        <address>
+        <address class="footer-section__address">
           <a href="““">
             <span class="footer-logo__web">Web</span>
             <span class="footer-logo__studio">Studio</span>
@@ -427,5 +441,72 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="header-icon" width="40" height="40">
+          <use href="./image/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="container-nav__list">
+        <li class="container-nav__item">
+          <a href="./studio.html" class="menu-container__link">Студия</a>
+        </li>
+        <li class="container-nav__item">
+          <a href="./portfolio.html" class="menu-container__link">Портфолио</a>
+        </li>
+        <li class="container-nav__item">
+          <a href="./contacts.html" class="menu-container__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="container-info__list">
+        <li class="container-info__item">
+          <a href="tel:+380961111111" class="container-info__tel"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="container-info__item">
+          <a href="mailto:info@devstudio.com" class="container-info__mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="container-social__list">
+        <li class="container-social__item">
+          <a href="" class="container-social__link"> Insagram</a>
+        </li>
+        <li class="container-social__item">
+          <a href="" class="container-social__link">
+            <svg class="container-social__icon" width="22" height="0">
+              <use href="./image/sprite.svg#icon-line-1"></use>
+            </svg>
+            Twitter</a
+          >
+        </li>
+        <li class="container-social__item">
+          <a href="" class="container-social__link">
+            <svg class="container-social__icon" width="22" height="0">
+              <use href="./image/sprite.svg#icon-line-1"></use>
+            </svg>
+            Facebook</a
+          >
+        </li>
+        <li class="container-social__item">
+          <a href="" class="container-social__link">
+            <svg class="container-social__icon" width="22" height="0">
+              <use href="./image/sprite.svg#icon-line-1"></use>
+            </svg>
+            LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
