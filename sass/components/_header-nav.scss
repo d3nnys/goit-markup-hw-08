@@ -104,11 +104,11 @@
   background-color: $primary-white-color;
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: translateY(-100%);
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
   transition: 250ms $animation-cubic-beizer;
 }
 
