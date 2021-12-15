@@ -11,8 +11,16 @@
     margin-bottom: 15px;
   }
 
-  .portfolio-item:nth-last-child(2) {
-    margin-left: 0px;
+  .portfolio-item:nth-child(2) {
+    margin-left: 8px;
+  }
+
+  .portfolio-item:nth-child(3) {
+    margin-left: 8px;
+  }
+
+  .portfolio-item:nth-child(5) {
+    margin-left: 8px;
   }
 }
 
@@ -23,15 +31,15 @@
 
     margin-bottom: 56px;
   }
+
+  .portfolio-item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
 
 // .portfolio-list__btn .portfolio-item + .portfolio-item {
 //   margin-left: 8px;
 // }
-
-.portfolio-item:not(:first-child) {
-  margin-left: 8px;
-}
 
 .portfolio-button-second {
   width: 128px;

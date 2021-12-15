@@ -317,6 +317,8 @@ summary {
   .hero-section {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    min-height: 600px;
   }
 }
 
@@ -355,6 +357,7 @@ body {
 }
 
 .container {
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1697,8 +1700,14 @@ textarea::placeholder {
   .portfolio-item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
-  .portfolio-item:nth-last-child(2) {
-    margin-left: 0px;
+  .portfolio-item:nth-child(2) {
+    margin-left: 8px;
+  }
+  .portfolio-item:nth-child(3) {
+    margin-left: 8px;
+  }
+  .portfolio-item:nth-child(5) {
+    margin-left: 8px;
   }
 }
 
@@ -1712,10 +1721,9 @@ textarea::placeholder {
             justify-content: center;
     margin-bottom: 56px;
   }
-}
-
-.portfolio-item:not(:first-child) {
-  margin-left: 8px;
+  .portfolio-item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
 
 .portfolio-button-second {
