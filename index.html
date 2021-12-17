@@ -160,7 +160,17 @@
               <div class="picture-section__box">
                 <p class="picture-section__text">Десктопные приложения</p>
               </div>
-              <img src="./image/img1.jpg" alt="Написание кода" width="370" />
+              <picture>
+                <img
+                  srcset="
+                    ./image/picture-1-img-370.jpg 370w,
+                    ./image/picture-1-img-740.jpg 740w
+                  "
+                  src="./image/picture-1-img-370.jpg"
+                  alt="Написание кода"
+                  sizes="(min-width: 2000px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                />
+              </picture>
             </li>
             <li class="item picture-section__item">
               <div class="picture-section__box">
