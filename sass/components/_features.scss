@@ -5,19 +5,16 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-section__item {
-    width: calc((100% - 2 * 15px) / 2);
-  }
-
-  .features-section__item:nth-child(-n + 2) {
-    margin-bottom: 30px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 
   .features-section__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 

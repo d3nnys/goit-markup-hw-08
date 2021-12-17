@@ -304,8 +304,8 @@ summary {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-img-3200.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img-3200.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-img-1600.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img-1600.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -326,6 +326,13 @@ summary {
   .hero-section {
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-img-3200.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img-3200.jpg);
   }
 }
 
@@ -484,11 +491,9 @@ footer {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .client-section__list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin: -15px;
   }
 }
 
@@ -505,32 +510,35 @@ footer {
             align-items: center;
     width: 170px;
   }
+  .client-section__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .client-section__item:not(:first-child) {
-    margin-left: 30px;
-  }
-  .client-section__item:nth-child(-n + 3) {
-    margin-bottom: 30px;
-  }
-  .client-section__item:nth-child(3n + 1) {
-    margin-left: 0;
+  .client-section__item {
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
   }
   .client-section__link {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 226px;
+    min-width: 226px;
   }
   .client-section__item {
-    width: 226px;
+    min-width: 226px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .client-section__item:nth-child(-n + 4) {
-    margin-bottom: 30px;
+  .client-section__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
@@ -568,8 +576,8 @@ footer {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 210px;
-    height: 92px;
+    min-width: 210px;
+    min-height: 92px;
   }
 }
 
@@ -589,22 +597,18 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-section__item {
-    width: calc((100% - 2 * 15px) / 2);
-  }
-  .features-section__item:nth-child(-n + 2) {
-    margin-bottom: 30px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
   .features-section__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1767,15 +1771,9 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-work__item {
-    -ms-flex-preferred-size: 354px;
-        flex-basis: 354px;
-    height: 100%;
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
-  }
-  .portfolio-work__item:not(:last-child) {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
   }
   .portfolio-work__link {
     display: -webkit-box;
@@ -1805,8 +1803,9 @@ textarea::placeholder {
 
 @media screen and (max-width: 767px) {
   .portfolio-work__item {
-    width: 450px;
-    height: 404px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: auto;
   }
   .portfolio-work__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1823,17 +1822,12 @@ textarea::placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
   .portfolio-work__item {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .portfolio-work__item:nth-child(3n) {
-    margin-right: 0;
-  }
-  .portfolio-work__item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
   }
 }
 
@@ -1927,15 +1921,10 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-section__item:nth-child(1) {
-    margin-bottom: 30px;
-  }
-  .team-section__item:nth-child(2) {
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .team-section__item:nth-child(4) {
-    margin-left: 30px;
+  .team-section__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
   .team-section__list {
     display: -webkit-box;
@@ -1946,6 +1935,7 @@ textarea::placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: -15px;
   }
 }
 
@@ -1956,7 +1946,6 @@ textarea::placeholder {
 }
 
 .team-section__item {
-  margin-bottom: 0;
   background-color: #ffffff;
   padding: 0;
   width: 270px;
@@ -2015,7 +2004,15 @@ textarea::placeholder {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
+  .team-social__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .team-social__item:not(:last-child) {
     margin-right: 10px;
   }
@@ -2050,7 +2047,7 @@ textarea::placeholder {
   fill: currentColor;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .team-section__list .item + .item {
     margin-left: 30px;
   }
