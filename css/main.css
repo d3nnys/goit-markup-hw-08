@@ -1765,19 +1765,28 @@ textarea::placeholder {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-work__item {
-    width: 354px;
+    -ms-flex-preferred-size: 354px;
+        flex-basis: 354px;
     height: 100%;
-  }
-  .portfolio-work__item:nth-child(even) {
-    margin-left: 30px;
+    margin: 15px;
   }
   .portfolio-work__item:not(:last-child) {
-    margin-bottom: 30px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+  }
+  .portfolio-work__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
   }
   .portfolio-work__list {
     display: -webkit-box;
@@ -1785,9 +1794,7 @@ textarea::placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin: -15px;
   }
   .portfolio-bottom__box {
     -webkit-box-flex: 1;
@@ -1807,6 +1814,9 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1200px) {
+  .portfolio-work__link {
+    display: block;
+  }
   .portfolio-work__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1842,10 +1852,6 @@ textarea::placeholder {
 .portfolio-work__link:focus .portfolio-card__text,
 .portfolio-work__link:hover .portfolio-card__text {
   opacity: 1;
-}
-
-.portfolio-work__link {
-  display: block;
 }
 
 .portfolio-box__card {
