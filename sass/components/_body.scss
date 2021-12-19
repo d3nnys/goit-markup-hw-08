@@ -107,6 +107,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  label {
+    font-size: 12px;
+  }
+}
+
 // button {
 //   font-family: inherit;
 //   font-size: 100%;

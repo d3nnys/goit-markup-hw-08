@@ -367,22 +367,6 @@ summary {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .hero-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .hero-section {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -395,6 +379,13 @@ summary {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .team-section {
@@ -514,6 +505,12 @@ footer {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  label {
+    font-size: 12px;
   }
 }
 
@@ -928,7 +925,7 @@ footer {
 }
 
 .footer-mail__input {
-  width: 450px;
+  width: 358px;
   height: 50px;
   padding: 15px 16px;
   background-color: #2f303a;
@@ -943,6 +940,7 @@ footer {
 @media screen and (max-width: 1199px) {
   .footer-mail__input {
     margin-bottom: 20px;
+    width: 450px;
   }
 }
 
@@ -1445,6 +1443,13 @@ footer {
   padding: 40px;
 }
 
+@media screen and (max-width: 1199px) {
+  .form {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 .form-modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -1548,9 +1553,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1661,6 +1666,12 @@ textarea::placeholder {
   border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-contract__label {
+    min-width: 346px;
+  }
 }
 
 @media screen and (max-width: 1199px) {

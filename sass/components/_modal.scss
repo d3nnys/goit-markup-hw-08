@@ -32,6 +32,11 @@
   width: 528px;
   height: 581px;
   padding: 40px;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .form-modal__title {
@@ -128,7 +133,7 @@
 
 .modal-contract {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -208,4 +213,10 @@ textarea::placeholder {
   border: 1px solid transparent;
 
   cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-contract__label {
+    min-width: 346px;
+  }
 }

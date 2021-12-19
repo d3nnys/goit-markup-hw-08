@@ -185,7 +185,7 @@
 }
 
 .footer-mail__input {
-  width: 450px;
+  width: 358px;
   height: 50px;
 
   padding: 15px 16px;
@@ -199,6 +199,7 @@
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
+    width: 450px;
   }
 }
 
