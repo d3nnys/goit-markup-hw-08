@@ -197,9 +197,14 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 20px;
     width: 100%;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    width: 450px;
   }
 }
 
