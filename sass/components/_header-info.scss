@@ -12,6 +12,9 @@
     display: flex;
     align-items: center;
 
+    font-size: 12px;
+    line-height: 1.1666;
+
     transition: 250ms $animation-cubic-beizer;
   }
 
@@ -60,7 +63,7 @@
   }
 
   .site-info__list .site-info__item + .site-info__item {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .site-info__list a {

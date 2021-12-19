@@ -4,7 +4,14 @@
 }
 
 .header-bord__box {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 80px;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+    justify-content: flex-start;
+  }
 }

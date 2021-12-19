@@ -19,7 +19,7 @@
     <!-- cap -->
     <header class="header-bord">
       <div class="header-bord__box container">
-        <a href="““">
+        <a href="““" class="header-bord__link">
           <span class="header-logo__web">Web</span>
           <span class="header-logo__studio">Studio</span>
         </a>
@@ -39,8 +39,31 @@
               >
             </li>
           </ul>
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              class="header-icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="header-icon__close"
+                href="./image/sprite.svg#icon-close"
+              ></use>
+              <use
+                class="header-icon__menu"
+                href="./image/sprite.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="site-info">
+        <ul class="site-info__list">
           <li class="site-info__item">
             <a href="mailto:info@devstudio.com" class="site-info__link link">
               <svg class="site-info__icon">
@@ -66,7 +89,7 @@
     <!-- footer -->
     <footer class="footer-section">
       <div class="footer-section__box container">
-        <address>
+        <address class="footer-section__address">
           <a href="““">
             <span class="footer-logo__web">Web</span>
             <span class="footer-logo__studio">Studio</span>

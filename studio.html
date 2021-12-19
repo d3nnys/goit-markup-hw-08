@@ -143,27 +143,43 @@
               <div class="picture-section__box">
                 <p class="picture-section__text">Десктопные приложения</p>
               </div>
-              <img src="./image/img1.jpg" alt="Написание кода" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/picture-1-img-370.jpg 1x,
+                    ./image/picture-1-img-740.jpg 2x
+                  "
+                />
+                <img src="./image/picture-1-img-370.jpg" alt="Написание кода" />
+              </picture>
             </li>
             <li class="item picture-section__item">
               <div class="picture-section__box">
                 <p class="picture-section__text">Мобильные приложения</p>
               </div>
-              <img
-                src="./image/img2.jpg"
-                alt="Оптимизация под смартфоны"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/picture-2-img-370.jpg 1x,
+                    ./image/picture-2-img-740.jpg 2x
+                  "
+                />
+                <img src="./image/img2.jpg" alt="Оптимизация под смартфоны" />
+              </picture>
             </li>
             <li class="item picture-section__item">
               <div class="picture-section__box">
                 <p class="picture-section__text">Дизайнерские решения</p>
               </div>
-              <img
-                src="./image/img3.jpg"
-                alt="Оптимизация под планшеты"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/picture-3-img-370.jpg 1x,
+                    ./image/picture-3-img-740.jpg 2x
+                  "
+                />
+                <img src="./image/img3.jpg" alt="Оптимизация под планшеты" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -175,10 +191,33 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__item item">
-              <img
-                src="./image/team1.jpg"
-                alt="Отвечает за выявление проблем продукта"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team-1-desktop-1x.jpg 1x,
+                    ./image/team-1-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team-1-tablet-1x.jpg 1x,
+                    ./image/team-1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team-1-mobile-1x.jpg 1x,
+                    ./image/team-1-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./image/team1.jpg"
+                  alt="Отвечает за выявление проблем продукта"
+                />
+              </picture>
               <div class="team-social__box">
                 <h3 class="team-social__title">Игорь Демьяненко</h3>
                 <p class="team-social__text">Product Designer</p>
@@ -215,10 +254,33 @@
               </div>
             </li>
             <li class="team-section__item item">
-              <img
-                src="./image/team2.jpg"
-                alt="Создает видимую для пользователя часть веб-страницы"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team-2-desktop-1x.jpg 1x,
+                    ./image/team-2-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team-2-tablet-1x.jpg 1x,
+                    ./image/team-2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team-2-mobile-1x.jpg 1x,
+                    ./image/team-2-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./image/team2.jpg"
+                  alt="Создает видимую для пользователя часть веб-страницы"
+                />
+              </picture>
               <div class="team-social__box">
                 <h3 class="team-social__title">Ольга Репина</h3>
                 <p class="team-social__text">Frontend Developer</p>
@@ -255,10 +317,33 @@
               </div>
             </li>
             <li class="team-section__item item">
-              <img
-                src="./image/team3.jpg"
-                alt="Ищет возможности для достижения более выгодных позиций относительно конкурентов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team-3-desktop-1x.jpg 1x,
+                    ./image/team-3-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team-3-tablet-1x.jpg 1x,
+                    ./image/team-3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team-3-mobile-1x.jpg 1x,
+                    ./image/team-3-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./image/team3.jpg"
+                  alt="Ищет возможности для достижения более выгодных позиций относительно конкурентов"
+                />
+              </picture>
               <div class="team-social__box">
                 <h3 class="team-social__title">Николай Тарасов</h3>
                 <p class="team-social__text">Marketing</p>
@@ -295,10 +380,33 @@
               </div>
             </li>
             <li class="team-section__item item">
-              <img
-                src="./image/team4.jpg"
-                alt="Креативный специалист, который проектирует пользовательские интерфейсы"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team-4-desktop-1x.jpg 1x,
+                    ./image/team-4-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team-4-tablet-1x.jpg 1x,
+                    ./image/team-4-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team-4-mobile-1x.jpg 1x,
+                    ./image/team-4-mobile-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./image/team4.jpg"
+                  alt="Креативный специалист, который проектирует пользовательские интерфейсы"
+                />
+              </picture>
               <div class="team-social__box">
                 <h3 class="team-social__title">Михаил Ермаков</h3>
                 <p class="team-social__text">UI Designer</p>
@@ -549,7 +657,7 @@
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg width="40" height="40">
+        <svg class="header-icon" width="40" height="40">
           <use href="./image/sprite.svg#icon-close"></use>
         </svg>
       </button>
