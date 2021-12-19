@@ -925,7 +925,7 @@ footer {
 }
 
 .footer-mail__input {
-  width: 100%;
+  width: 358px;
   height: 50px;
   padding: 15px 16px;
   background-color: #2f303a;
@@ -940,7 +940,7 @@ footer {
 @media screen and (max-width: 1199px) {
   .footer-mail__input {
     margin-bottom: 20px;
-    width: 450px;
+    width: 100%;
   }
 }
 
