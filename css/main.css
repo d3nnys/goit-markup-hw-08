@@ -940,14 +940,16 @@ footer {
 @media screen and (max-width: 767px) {
   .footer-mail__input {
     margin-bottom: 20px;
-    width: 350px;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .footer-mail__input {
     margin-bottom: 20px;
-    width: 420px;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
   }
 }
 

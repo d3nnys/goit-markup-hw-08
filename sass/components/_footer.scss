@@ -199,12 +199,12 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
-    width: 350px;
+    flex-basis: 75%;
   }
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
-    width: 420px;
+    flex-basis: 75%;
   }
 }
 
