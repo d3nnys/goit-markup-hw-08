@@ -185,8 +185,9 @@
 
   .container-social__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     height: 22px;
-    justify-content: center;
   }
 
   .container-social__item {
