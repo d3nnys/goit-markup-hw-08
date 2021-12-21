@@ -19,6 +19,10 @@
   &:hover {
     color: $accent-color;
   }
+
+  @media screen and (max-width: 450px) {
+    right: 50px;
+  }
 }
 
 .modal-icon__close {
@@ -29,13 +33,17 @@
 }
 
 .form {
-  width: 528px;
+  min-width: 450px;
   height: 581px;
   padding: 40px;
 
   @media screen and (max-width: 1199px) {
-    width: 450px;
+    min-width: 100%;
     height: 609px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
   }
 }
 
