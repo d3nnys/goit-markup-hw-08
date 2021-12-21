@@ -1324,11 +1324,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 357px;
     height: 22px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .container-social__item {
     font-weight: 500;
