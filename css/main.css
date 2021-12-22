@@ -1455,6 +1455,45 @@ footer {
           align-items: center;
 }
 
+@media screen and (max-width: 450px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-modal__title {
+    width: 90vw;
+  }
+  .modal-input__box {
+    width: 90vw;
+  }
+  .modal-textarea__box {
+    width: 90vw;
+  }
+  .modal-contract {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90vw;
+  }
+}
+
 .modal-btn__close {
   position: absolute;
   right: 8px;
@@ -1482,7 +1521,7 @@ footer {
 
 @media screen and (max-width: 450px) {
   .modal-btn__close {
-    right: 50px;
+    right: 60px;
   }
 }
 
@@ -1649,7 +1688,7 @@ footer {
   text-decoration: underline;
 }
 
-textarea {
+.modal-text__window {
   resize: none;
   width: 100%;
   height: 120px;
@@ -1661,28 +1700,28 @@ textarea {
   border-radius: 4px;
 }
 
-textarea::-webkit-input-placeholder {
+.modal-text__window::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-textarea:-ms-input-placeholder {
+.modal-text__window:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-textarea::-ms-input-placeholder {
+.modal-text__window::-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-textarea::placeholder {
+.modal-text__window::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
