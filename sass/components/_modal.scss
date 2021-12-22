@@ -19,10 +19,16 @@
 
   .modal-contract__item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 90vw;
+  }
+
+  .modal-contract__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
