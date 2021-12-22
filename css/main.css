@@ -940,7 +940,7 @@ footer {
 @media screen and (max-width: 767px) {
   .footer-mail__input {
     margin-bottom: 20px;
-    width: 75vw;
+    max-width: 70%;
   }
 }
 
@@ -985,7 +985,7 @@ footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 10px 28px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
@@ -1255,7 +1255,7 @@ footer {
           transform: translateY(-100%);
 }
 
-.menu-container .container {
+.menu-container .main-container__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1313,6 +1313,9 @@ footer {
   }
   .menu-container__link:focus, .menu-container__link:hover {
     color: #2196f3;
+  }
+  .container-nav__list {
+    margin-bottom: 50px;
   }
   .container-nav__item:not(:last-child) {
     margin-bottom: 32px;
@@ -1403,12 +1406,6 @@ footer {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
-  .hero-section__title {
-    width: 696px;
-  }
-}
-
 .hero-section__title {
   font-weight: 900;
   font-size: 44px;
@@ -1419,7 +1416,16 @@ footer {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .hero-section__title {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    font-size: 26px;
+    line-height: 1.6153;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .hero-section__title {
     width: 360px;
     font-size: 26px;
@@ -1427,9 +1433,9 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .hero-section__title {
-    width: 70vw;
+    width: 696px;
   }
 }
 

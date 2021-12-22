@@ -199,7 +199,7 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
-    width: 75vw;
+    max-width: 70%;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -236,7 +236,7 @@
   justify-content: flex-start;
 
   padding: 10px 28px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
 
   font-weight: 700;

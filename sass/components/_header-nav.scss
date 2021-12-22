@@ -94,7 +94,7 @@
 
   transform: translateY(-100%);
 
-  .container {
+  .main-container__menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,6 +147,10 @@
     &:hover {
       color: $accent-color;
     }
+  }
+
+  .container-nav__list {
+    margin-bottom: 50px;
   }
 
   .container-nav__item {
