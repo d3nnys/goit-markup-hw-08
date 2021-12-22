@@ -1427,6 +1427,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero-section__title {
+    width: 70vw;
+  }
+}
+
 .hero-section__box {
   display: -webkit-box;
   display: -ms-flexbox;

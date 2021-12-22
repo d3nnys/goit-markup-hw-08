@@ -14,13 +14,15 @@
   text-transform: uppercase;
 
   color: $primary-white-color;
-}
 
-@media screen and (max-width: 1199px) {
-  .hero-section__title {
+  @media screen and (max-width: 1199px) {
     width: 360px;
     font-size: 26px;
     line-height: 1.6153;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 70vw;
   }
 }
 
