@@ -17,10 +17,10 @@
     width: 90vw;
   }
 
-  .modal-contract {
+  .modal-contract__item {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
     align-items: center;
     width: 90vw;
   }
@@ -251,7 +251,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-contract__label {
     min-width: 346px;
   }
