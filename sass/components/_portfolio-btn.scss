@@ -15,12 +15,30 @@
     margin-left: 8px;
   }
 
-  .portfolio-item:nth-child(3) {
+  .portfolio-item:nth-child(4) {
     margin-left: 8px;
   }
 
   .portfolio-item:nth-child(5) {
     margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 384px) and (max-width: 767px) {
+  .portfolio-item:nth-child(2) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 392px) {
+  .portfolio-item:nth-child(4) {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .portfolio-item:nth-child(5) {
+    margin-left: 0px;
   }
 }
 

@@ -937,11 +937,17 @@ footer {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer-mail__input {
     margin-bottom: 20px;
-    -ms-flex-preferred-size: 75%;
-        flex-basis: 75%;
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-mail__input {
+    margin-bottom: 20px;
+    width: 450px;
   }
 }
 
@@ -1780,11 +1786,29 @@ textarea::placeholder {
   .portfolio-item:nth-child(2) {
     margin-left: 8px;
   }
-  .portfolio-item:nth-child(3) {
+  .portfolio-item:nth-child(4) {
     margin-left: 8px;
   }
   .portfolio-item:nth-child(5) {
     margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 384px) and (max-width: 767px) {
+  .portfolio-item:nth-child(2) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 392px) {
+  .portfolio-item:nth-child(4) {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .portfolio-item:nth-child(5) {
+    margin-left: 0px;
   }
 }
 
