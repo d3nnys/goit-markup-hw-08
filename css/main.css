@@ -1699,6 +1699,7 @@ footer {
 .modal-contract__link {
   text-decoration-skip-ink: none;
   text-decoration: underline;
+  color: #2196f3;
 }
 
 .modal-text__window {
